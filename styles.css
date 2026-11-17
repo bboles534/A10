@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  background: #edf2f6;
+  color: #182536;
+  font: 1rem/1.6 system-ui, sans-serif;
+}
+main {
+  max-width: 39rem;
+  margin: 2rem auto;
+  padding: clamp(1.25rem, 5vw, 2.5rem);
+  background: white;
+  border: 1px solid #c9d5e0;
+  border-radius: 1rem;
+}
+h1 { margin-top: 0; line-height: 1.2; }
+#welcome { color: #14516b; font-size: 1.35rem; font-weight: 700; overflow-wrap: anywhere; }
+label { display: block; font-weight: 600; }
+input, button { font: inherit; border-radius: .4rem; }
+input { display: block; width: 100%; padding: .55rem; margin: .3rem 0 .8rem; border: 1px solid #67798b; }
+button { margin: 0 .3rem .3rem 0; padding: .45rem .8rem; border: 1px solid #14516b; background: #14516b; color: white; cursor: pointer; }
+#delete-cookie { background: white; color: #14516b; }
+:focus-visible { outline: 3px solid #aa5100; outline-offset: 3px; }
+#status { min-height: 1.6em; }
+footer { padding-top: 1rem; border-top: 1px solid #c9d5e0; color: #435468; font-size: .9rem; }
+dialog {
+  width: min(28rem, calc(100% - 2rem));
+  padding: 1.5rem;
+  color: inherit;
+  border: 1px solid #c9d5e0;
+  border-radius: .75rem;
+}
+dialog h2 { margin-top: 0; }
+dialog::backdrop { background: #18253699; }

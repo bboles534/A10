@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browser Cookie Demo | IS117 A10</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="cookies.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Browser Cookie Demo</h1>
+    <p id="welcome" aria-live="polite">Welcome, visitor!</p>
+    <p id="cookie-info">If you select Save name, this page stores the name you enter in a browser cookie for 30 days to greet you on your next visit. You can remove it at any time with Delete cookie. This demo uses the cookie only for the greeting.</p>
+    <button type="button" id="enter-name">Enter name</button>
+    <button type="button" id="delete-cookie">Delete cookie</button>
+    <dialog id="name-dialog" aria-labelledby="dialog-title">
+      <h2 id="dialog-title">Enter your name</h2>
+      <form id="name-form">
+        <label for="visitor-name">Your name</label>
+        <input id="visitor-name" type="text" maxlength="80" required aria-describedby="cookie-info">
+        <button type="submit">Save name</button>
+        <button type="button" id="cancel-name">Cancel</button>
+      </form>
+    </dialog>
+    <p id="status" role="status"></p>
+    <footer>&copy; 2026 Beshoy Boles · A10 due November 17, 2026</footer>
+  </main>
+</body>
+</html>
